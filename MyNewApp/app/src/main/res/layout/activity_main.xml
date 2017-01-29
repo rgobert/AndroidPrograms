@@ -31,7 +31,8 @@
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText"
         android:textColor="#000"
-        android:width="320dp"/>
+        android:width="320dp"
+        android:background="#598634"/>
 
     <Button
         android:text="@string/btnConnect"
@@ -52,6 +53,7 @@
         android:textColor="#000"
         android:width="320dp"
         android:layout_above="@+id/editText2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#598634"/>
 
 </RelativeLayout>
