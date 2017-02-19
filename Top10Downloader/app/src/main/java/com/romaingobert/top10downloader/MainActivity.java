@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             } catch(IOException e){
                 Log.d("DownloadData", "IO Exception" + e.getMessage());
         }
+            //buffer
 
         }
     }
