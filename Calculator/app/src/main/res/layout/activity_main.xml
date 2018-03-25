@@ -10,15 +10,32 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.romaingobert.calculator.MainActivity">
+    tools:context="com.romaingobert.calculator.MainActivity"
+    android:weightSum="3">
+
 
     <TextView
         android:id="@+id/textInstruction"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:gravity="center"
-        android:text="Enter 2 numbers"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:layout_weight="1"
+        tools:text="test"
+        android:background="@android:color/background_dark"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="test"/>
+
+    </android.support.design.widget.TextInputLayout>
+
 
     <EditText
         android:id="@+id/edtOperate1"
@@ -31,9 +48,12 @@
     <EditText
         android:id="@+id/edtOperate2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:inputType="numberDecimal"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:layout_weight="1"
+        tools:text="test"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,5 +125,6 @@
         android:textColor="@android:color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
+>>>>>>> fdf506ce494bc19631c5332cbd7925abe6e66c25
 
 </LinearLayout>
